@@ -1,0 +1,18 @@
+
+@media screen and (max-width:520px) {
+    .css-qivjh0-MuiStepLabel-label {
+        display:none;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+
+    }
+  }
+  .css-126nd9x-MuiPaper-root {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    border: red 2px solid;
+}

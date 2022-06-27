@@ -1,0 +1,366 @@
+.container-products {
+    font-family: Montserrat;
+    height: auto;
+    width: 100%;
+    margin-bottom: 25px;
+    box-sizing: content-box;
+   margin-top: 100px;
+}
+.menu-tempo{
+    background:rgb(15, 15, 15);
+    height: 60px;
+}
+
+/*first header*/
+.cabezera {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    box-sizing: content-box;
+}
+
+.cabezera h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    .cabezera {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .cabezera h2 {
+        font-size: 1.8rem;
+        padding-bottom: 20px;
+        font-weight: bold;
+    }
+}
+
+.filtros-cabeza {
+    display: flex;
+}
+
+.filter {
+    font-family: Montserrat;
+    border-radius: 50px;
+    background-color: #E8E8E8;
+    border: none;
+    margin: 10px;
+    padding: 0.1rem 20px;
+}
+
+.filter1 {
+    font-family: Montserrat;
+    border-radius: 50px;
+    background-color: #E8E8E8;
+    border: none;
+    margin: 10px;
+    padding: 0.1rem 20px;
+}
+
+.fil {
+    background-color: #E8E8E8;
+    padding: 0.2rem 0;
+    border: none;
+    font-family: Montserrat;
+    font-size: 0.9rem;
+    color: #45484D;
+}
+
+@media screen and (max-width: 580px) {
+    .filter1 {
+        display: none;
+    }
+
+    .filter {
+        width: 100%;
+    }
+
+    .fil {
+        width: 100%;
+    }
+}
+/*_-------------------------*/
+
+/*two container*/
+
+
+.conteCata {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    height: auto;
+    font-family: Montserrat;
+}
+
+.filtros {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filtros h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+    color: #5C5D61;
+    font-family: Montserrat;
+}
+
+.cat-fil {
+    margin: 10px;
+}
+
+.comboboxx {
+    font-size: 0.9rem;
+    font-family: Montserrat;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #E8E8E8;
+    color: #45484D;
+
+}
+
+@media screen and (max-width: 424px) {
+    .comboboxx {
+        display: table;
+    }
+
+    .filtros {
+        display: table;
+    }
+}
+
+
+
+/*....end....*/
+
+/*....Catalogo....*/
+
+.catalogo {
+    padding-top: 60px;
+    margin-top: 30px;
+    background-color: #F4F4F4;
+}
+
+.cont-cata {
+    margin: auto;
+    display: grid;
+    width: 90%;
+    grid-template-rows: repeat(5, minmax(auto, min-content));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 150px;
+    gap: 40px 30px;
+    box-sizing: content-box;
+
+    .itemss {
+        color: white;
+        height: auto;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+    }
+
+    .names {
+        padding: 20px;
+        font-family: Montserrat;
+    }
+
+    .names h3 {
+        color: black;
+        font-size: 1.3rem;
+        font-weight: 600;
+
+    }
+
+    .names p {
+        color: #5C5D61;
+        font-size: 0.9rem;
+        line-height: 10px;
+        font-weight: 600;
+    }
+
+    .names .mrcs {
+        color: #5C5D61;
+        font-size: 0.7rem;
+        font-weight: 100;
+        line-height: 1px;
+
+    }
+
+    .itemss img {
+        background-size: cover;
+        margin: auto;
+    }
+
+    .container-buton {
+        display: flex;
+        box-sizing: border-box;
+        padding: 20px 10px;
+        margin: auto;
+        opacity: 0;
+        transition: all 0.5s ease-out;
+    }
+    .container-buton:hover{
+        opacity: 1;
+    }
+    .button {
+        background-color: #0378FB;
+        margin: auto;
+        border-radius: 50px;
+        padding-right: 30px;
+        border: none;
+        padding-left: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+       
+    }
+
+    .button-trans {
+        background-color: none;
+        margin: auto;
+        border-radius: 50px;
+        padding-right: 30px;
+        border: solid 0.1rem black;
+        padding-left: 30px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        cursor: pointer;
+    }
+    .button a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+        font-family: Montserrat;
+    }
+
+    .button-trans a {
+        text-decoration: none;
+        color: black;
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Montserrat;
+    }
+    .button-trans a:hover {
+        color: black;
+    }
+}
+
+/*Screem Grid*/
+@media screen and (max-width: 700px) {
+    .cont-cata {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cont-cata {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+/*end*/
+/*Screem Buttons*/
+@media screen and (max-width: 1290px) {
+    .cont-cata {
+        .button {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        .button-trans {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .button a {
+            font-size: 0.6rem;
+        }
+
+        .button-trans a {
+            font-size: 0.6rem;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cont-cata {
+        .button {
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+
+        .button-trans {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cont-cata {
+        .button {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .button-trans {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .container-buton {
+            padding: 10px 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .cont-cata {
+        .button {
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+
+        .button-trans {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        .button a {
+            font-size: 0.7rem;
+
+        }
+
+        .button-trans a {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .cont-cata {
+        .button {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .button-trans {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .button a {
+            font-size: 0.6rem;
+        }
+
+        .button-trans a {
+            font-size: 0.6rem;
+        }
+
+    }
+}
